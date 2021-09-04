@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class AddressBookDB {
+public class AddressBookDB  {
 	public static void insertContact() {
 		System.out.println("Inserting a new contact to adressbook table");
 		Connection conn = AddressBookMainday35.getsqlConnection();
