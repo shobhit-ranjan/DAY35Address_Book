@@ -1,0 +1,88 @@
+mysql> show tables;
++--------------------------------+
+| Tables_in_address_book_service |
++--------------------------------+
+| addressbookday32               |
+| addressbookday37               |
+| adressbook                     |
++--------------------------------+
+3 rows in set (0.00 sec)
+
+mysql> describe addressbookday35;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| firstname | varchar(20) | YES  |     | NULL    |       |
+| lastname  | varchar(80) | YES  |     | NULL    |       |
+| address   | varchar(30) | YES  |     | NULL    |       |
+| city      | varchar(33) | YES  |     | NULL    |       |
+| state     | varchar(34) | YES  |     | NULL    |       |
+| zip       | mediumtext  | YES  |     | NULL    |       |
+| phoneno   | mediumtext  | YES  |     | NULL    |       |
+| email     | varchar(44) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql> select * from addressbookday35;
+Empty set (0.01 sec)
+
+mysql> select * from addressbookday35;
+Empty set (0.00 sec)
+
+mysql> select * from addressbookday35;
++-----------+----------+---------+----------+-------+--------+------------+----------------+
+| firstname | lastname | address | city     | state | zip    | phoneno    | email          |
++-----------+----------+---------+----------+-------+--------+------------+----------------+
+| SHO       | RAN      | A 999   | Varanasi | UP    | 211019 | 8934788990 | ranh@gmail.com |
++-----------+----------+---------+----------+-------+--------+------------+----------------+
+1 row in set (0.00 sec)
+
+mysql> select * from addressbookday35;
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| firstname | lastname | address | city       | state | zip    | phoneno    | email          |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| SHO       | RAN      | A 999   | Varanasi   | UP    | 211019 | 8934788990 | ranh@gmail.com |
+| ABC       | XYZ      | A 888   | Allahahbad | UP    | 211017 | 8934888211 | xyz@gmail.com  |
+| ABQ       | XYX      | A 777   | Allahahbad | UP    | 211018 | 8934888212 | xyx@gmail.com  |
+| ABW       | XYC      | A 888   | Nodia      | UP    | 211023 | 8934888213 | xyc@gmail.com  |
+| ABE       | XYV      | A 111   | Nodia      | UP    | 211025 | 8934888214 | xyv@gmail.com  |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from addressbookday35;
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| firstname | lastname | address | city       | state | zip    | phoneno    | email          |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| SHO       | RAN      | A 999   | Varanasi   | UP    | 211019 | 8934788990 | ranh@gmail.com |
+| ABC       | XYZ      | A 888   | Allahahbad | UP    | 211017 | 8934888211 | xyz@gmail.com  |
+| ABQ       | XYX      | A 777   | Allahahbad | UP    | 211018 | 8934888212 | xyx@gmail.com  |
+| ABW       | XYC      | A 888   | Nodia      | UP    | 211023 | 8934888213 | xyc@gmail.com  |
+| ABE       | XYV      | A 111   | Nodia      | UP    | 211025 | 8934888214 | xyv@gmail.com  |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from addressbookday35;
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| firstname | lastname | address | city       | state | zip    | phoneno    | email          |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| SHO       | RAN      | A 999   | Varanasi   | UP    | 211019 | 8934788990 | ranh@gmail.com |
+| ABC       | XYZ      | A 888   | Allahahbad | UP    | 211017 | 8934888211 | xyz@gmail.com  |
+| ABQ       | XYX      | A 777   | Allahahbad | UP    | 211018 | 8934888212 | xyx@gmail.com  |
+| ABW       | XYC      | A 888   | Nodia      | UP    | 211023 | 8934888213 | xyc@gmail.com  |
+| ABE       | XYV      | A 111   | Nodia      | UP    | 211025 | 8934888214 | xyv@gmail.com  |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> select * from addressbookday35;
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| firstname | lastname | address | city       | state | zip    | phoneno    | email          |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+| SHO       | RAN      | A 999   | Varanasi   | UP    | 211019 | 8934788990 | ranh@gmail.com |
+| ABC       | XYZ      | A 888   | Allahahbad | UP    | 211017 | 8934888211 | xyz@gmail.com  |
+| ABQ       | XYX      | A 777   | Allahahbad | UP    | 211018 | 8934888212 | xyx@gmail.com  |
+| ABW       | XYC      | A 888   | Nodia      | UP    | 211023 | 8934888213 | xyc@gmail.com  |
+| ABE       | ZZZZ     | A 111   | Nodia      | UP    | 211025 | 8934888214 | xyv@gmail.com  |
++-----------+----------+---------+------------+-------+--------+------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql>
