@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class AddressBookDB  {
+public class AddressBookDB {
 	public static void insertContact() {
 		System.out.println("Inserting a new contact to adressbook table");
 		Connection conn = AddressBookMainday35.getsqlConnection();
@@ -150,14 +150,17 @@ public class AddressBookDB  {
 				Statement statement = conn.createStatement();
 				ResultSet resultSet = statement.executeQuery(readEmpPayroll);
 				while (resultSet.next()) {
-					Integer id = resultSet.getInt(1);
-					String name = resultSet.getString(2);
-					Integer salary = resultSet.getInt(3);
-					String date = resultSet.getString(4);
-					String gender = resultSet.getString(5);
+					String firstName = resultSet.getString(1);
+					String lastName = resultSet.getString(2);
+					String adress = resultSet.getString(3);
+					String city = resultSet.getString(4);
+					String state = resultSet.getString(5);
+					Integer zip = resultSet.getInt(6);
+					String phoneNumber = resultSet.getString(7);
+					String email = resultSet.getString(8);
 					String row = String.format(
-							"User record: \n Id: %d, \n Name: %s,\n Salary: %d, \n Date: %s,  \n Gender: %s \n", id,
-							name, salary, date, gender);
+							"User record:\n FirstName: %s,\n LastName: %s, \n Address: %s,  \n City: %s,\n State: %s , \n Zip: %d, \n PhoneNumber: %s, \n email:%s",
+							firstName, lastName, adress, city, state, zip, phoneNumber, email);
 					System.out.println(row);
 				}
 			}
