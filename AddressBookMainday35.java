@@ -16,7 +16,7 @@ public class AddressBookMainday35  {
 		Connection conn = null;
 		String hostUrl = "jdbc:mysql://localhost:3306/address_book_service";
 		String userName = "root";
-		String password = "mymaths009!@A";
+		String password = "mymaths00";
 		try {
 			conn = DriverManager.getConnection(hostUrl, userName, password);
 		} catch (SQLException e) {
